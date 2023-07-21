@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: black;
+}
+nav{
+    background-color: rgb(39, 43, 46);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo{
+    width: 152px;
+    margin-right: 45px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+.nav-left, .nav-right{
+    display: flex;
+    align-items: center;
+}
+.nav-left ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 20px;
+    padding-top: 5px;
+    margin: 0 10px;
+    color: white;
+}
+.nav-left ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-icon img{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.nav-icon{
+    margin-left: 20px;
+}
+.searchbox{
+    background-color: white;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    padding: 0  15px;
+    border-radius: 20px;
+}
+.searchbox input{
+    width: 100%;
+    background: transparent;
+    outline: none;
+    padding: 10px;
+    border: 0;
+}
+
+
+
+
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+}
+.left-sidebar{
+    
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+}
+.right-sidebar{
+    background:  rgb(39, 43, 46);
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    border-radius: 5%;
+}
+.main-content{
+    flex-basis: 47%;
+}
+.imp-links a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: white;
+    width: fit-content;
+}
+.imp-links a i{
+    font-size: 25px;
+    margin-right: 15px;
+}
+.imp-links{
+    border-bottom: 1px solid #ccc;
+}
+.activity{
+    background: rgb(39, 43, 46);
+    padding: 5px 25px;
+    margin: 12px 0;
+    border-radius: 5%;
+}
+.activity h3{
+    color: white;
+    font-size: 22px;
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+.activity a{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    margin: 10px 0;
+    text-decoration: none;
+}
+.activity a i{
+    font-size: 20px;
+    margin-right: 13px;
+}
+
+
+.trendings{
+    padding: 10px 25px;
+}
+.trendings i{
+    font-size: 15px;
+    float: right;
+    margin-top: 22px;
+    color: #ccc;
+}
+.trendings h3{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    text-decoration: underline;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.trendings a{
+    display: block;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    margin-top: 13px;
+}
+.trendings span{
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+
+
+
+.writepostcontainer{
+    width: 97%;
+    background: rgb(39, 43, 46);
+    border-radius: 5px;
+    padding: 15px;
+    columns: #626262;
+}
+.userpublic{
+    display: flex;
+    align-items: center;
+}
+.userpublic img{
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.userpublic div p{
+    color: white;
+    margin-bottom: -3px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.userpublic div small{
+    color: #ccc;
+    font-size: 12px;
+}
+.inputcontainer{
+    padding-left: 55px;
+    padding-top: 20px;
+    padding-bottom: 3px;
+}
+.inputcontainer textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    resize: none;
+    color: white;
+}
+.attach, .attach-thread{
+    display: flex;
+    align-items: center;
+}
+.attach li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: white;
+    flex-basis: 50%;
+    height: 30px;
+    font-size: 15px;
+    justify-content: center;
+    border-right: 1px solid #ccc;
+}
+.attach-thread li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: white;
+    flex-basis: 50%;
+    height: 30px;
+    font-size: 15px;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.attach-thread li:last-child{
+    border-right: 0;
+}
+.attach li i{
+    font-size: 22px;
+    margin-right: 10px;
+}
+.attach li:last-child{
+    border-right: 0;
+}
+
+
+
+
+.post{
+    background: rgb(39, 43, 46);
+    padding: 20px 25px 5px;
+    margin: 5px 0 15px;
+    border-radius: 5px;
+    width: 93%;
+}
+.post-author{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.post-author img{
+    width: 47px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.post-author h1{
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+    margin-top: 15px;
+}
+.post-author small{
+    display: block;
+    margin-bottom: -2px;
+    color: #ccc;
+}
+.post p{
+    font-size: 14px;
+    color: white;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+.poststats{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 6px;
+    color: #ccc;
+    margin-top: 10px;
+}
+.poststats div{
+    display: flex;
+    align-items: center;
+}
+.poststats div i{
+    font-size: 17px;
+    margin-right: 7px;
+}
+.liked{
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+
+
+
+
+.profile-main{
+    flex-basis: 73%;
+}
+.profile-sidebar{
+    flex-basis: 25%;
+    align-self: flex-start;
+    position: sticky;
+    top: 73px;
+    background: rgb(39, 43, 46);
+    border-radius: 3%;
+}
+.profile-container{
+    background: rgb(39, 43, 46);
+    border-radius: 3%;
+}
+.profile-container-content{
+    padding: 0 4% 10px;
+}
+.profile-pic{
+    width: 150px;
+    border-radius: 50%;
+    margin-top: -68px;
+    padding: 5px;
+    background: none;
+}
+.profile-container h1{
+    font-size: 28px;
+    color: white;
+}
+.profile-container b{
+    color: white;
+    font-weight: 300;
+}
+.profile-container p{
+    font-weight: 300;
+    color: #ccc;
+    margin-top: 5px;
+}
